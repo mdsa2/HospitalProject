@@ -8,6 +8,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using SocialMedia.Application.Common;
+using SocialMedia.Application.FileService;
 using SocialMedia.Application.Role;
 using SocialMedia.Application.Users.Service;
 using SocialMedia.Application.Users.UserDtos;
@@ -33,6 +34,7 @@ namespace SocialMedia.Infrastructure.Extension
             services.AddScoped<IRoleRepositry, RoleRepositry>();
             services.AddScoped<IRoleService, RoleService>();
             services.AddScoped<ITokenService, TokenService>();
+            services.AddScoped<IfileService, fileservice>();
             services.AddAutoMapper(typeof(UserProfile));
             services.AddAutoMapper(typeof(UserProfile));
 
