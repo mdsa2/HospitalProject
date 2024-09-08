@@ -1,5 +1,57 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="5a6cb8a2-fdcd-4881-b9b1-dce77f7e2d58" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.socailMediaPlatform/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.socailMediaPlatform/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SocialMedia.Application/Common/TokenService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/SocialMedia.Application/Common/TokenService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SocialMedia.Application/SocialMedia.Application.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/src/SocialMedia.Application/SocialMedia.Application.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SocialMedia.Application/Users/Service/UserService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/SocialMedia.Application/Users/Service/UserService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SocialMedia.Domain/Entities/User.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/SocialMedia.Domain/Entities/User.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SocialMedia.Domain/Repositry/IUserRepositry.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/SocialMedia.Domain/Repositry/IUserRepositry.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SocialMedia.Domain/SocialMedia.Domain.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/src/SocialMedia.Domain/SocialMedia.Domain.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SocialMedia.Infrastructure/Config/UserConfiguration.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/SocialMedia.Infrastructure/Config/UserConfiguration.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SocialMedia.Infrastructure/Extension/ServiceCollectionExtensions.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/SocialMedia.Infrastructure/Extension/ServiceCollectionExtensions.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SocialMedia.Infrastructure/Migrations/DataDbContextModelSnapshot.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/SocialMedia.Infrastructure/Migrations/DataDbContextModelSnapshot.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SocialMedia.Infrastructure/Repositry/UserRepositry.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/SocialMedia.Infrastructure/Repositry/UserRepositry.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SocialMedia.Infrastructure/SocialDbContext/DataDbContext.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/SocialMedia.Infrastructure/SocialDbContext/DataDbContext.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SocialMedia.Infrastructure/SocialMedia.Infrastructure.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/src/SocialMedia.Infrastructure/SocialMedia.Infrastructure.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/socialMedia.Api/Controller/UserController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/socialMedia.Api/Controller/UserController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/socialMedia.Api/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/socialMedia.Api/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/socialMedia.Api/SocialMedia.APi.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/src/socialMedia.Api/SocialMedia.APi.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/socialMedia.Api/appsettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/socialMedia.Api/appsettings.json" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 1
+}</component>
+  <component name="ProjectId" id="2lURpapkVJYuOPu0j3thN5O5NS8" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
   <component name="RunManager" selected=".NET Launch Settings Profile.SocialMedia.APi: IIS Express">
     <configuration name="SocialMedia.APi: IIS Express" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
       <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/src/socialMedia.Api/SocialMedia.APi.csproj" />
@@ -47,4 +99,21 @@
       </method>
     </configuration>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="5a6cb8a2-fdcd-4881-b9b1-dce77f7e2d58" name="Changes" comment="" />
+      <created>1725232853439</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1725232853439</updated>
+      <workItem from="1725232854892" duration="875000" />
+      <workItem from="1725604850497" duration="1875000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
 </project>

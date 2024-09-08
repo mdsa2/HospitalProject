@@ -18,7 +18,7 @@ namespace SocialMedia.APi.Controller
         }
 
         [HttpGet("{id}")]
-        public async Task<IActionResult> GetRole(int id)
+        public async Task<IActionResult> GetRoleById(int id)
         {
             var role = await _roleService.GetByIdAsync(id);
             if (role == null)

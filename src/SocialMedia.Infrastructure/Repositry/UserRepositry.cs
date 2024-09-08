@@ -32,6 +32,10 @@ namespace SocialMedia.Infrstrucutre.Repositry
             return user;
         }
 
+        public async Task<User> GetUserByPasswordResetToken(string token)
+        {
+            return await _db.Users.SingleOrDefaultAsync(u => u.PasswordResetToken == token);
+        }
         public async Task<User> GetUserByEmail(string email)
         {
             return await _db.Users.FirstOrDefaultAsync(user => user.Email == email);

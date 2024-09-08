@@ -9,6 +9,7 @@ namespace SocialMedia.Domain.Repositry
         public Task<User> CreateUser(User user);
         public Task<User> UpdateUser(User user);
         public Task<User> DeleteUser(User user);
-    
+        Task<User> GetUserByPasswordResetToken(string token);
+
     }
 }

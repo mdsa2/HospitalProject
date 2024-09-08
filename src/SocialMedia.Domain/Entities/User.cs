@@ -17,5 +17,11 @@ namespace SocialMedia.Domain.Entities
         public string? Image {  get; set; }
         public int RoleId { get; set; }
        public Roles? Roles { get; set; }
+        public bool Is2FAEnabled { get; set; }
+        public string? TwoFactorCode { get; set; }
+        public DateTime? TwoFactorCodeExpiration { get; set; }
+        public string? PasswordResetToken { get; set; }
+        public DateTime? PasswordResetTokenExpiration { get; set; }
+        public ICollection<Appointments> appointments { get; set; }
     }
 }

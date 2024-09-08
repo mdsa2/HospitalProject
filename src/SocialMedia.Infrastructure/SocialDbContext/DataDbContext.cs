@@ -17,7 +17,22 @@ namespace SocialMedia.Infrstrucutre.SocialDbContext
     }
         public DbSet<User> Users { get; set; }
         public DbSet<Roles> GetRoles { get; set; }
+        public DbSet<Appointments> appointments { get; set; }
+        public DbSet<Doctor> docotors { get; set; }
+        public override async Task<int> SaveChangesAsync(CancellationToken cancellationToken = default)
+        {
+            foreach (var entry in ChangeTracker.Entries<BaseEntity<int>>())
+            {
+                
+                if (entry.State == EntityState.Modified)
+                {
+                    entry.Entity.Updated = DateTime.UtcNow.AddHours(3);
+                }
+               
+            }
 
+            return await base.SaveChangesAsync(cancellationToken);
+        }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.ApplyConfiguration(new UserConfiguration());

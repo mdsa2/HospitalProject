@@ -22,6 +22,57 @@ namespace SocialMedia.Infrastructure.Migrations
 
             NpgsqlModelBuilderExtensions.UseIdentityByDefaultColumns(modelBuilder);
 
+            modelBuilder.Entity("SocialMedia.Domain.Entities.Appointments", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("integer");
+
+                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("Id"));
+
+                    b.Property<DateTime?>("AppointmentDate")
+                        .HasColumnType("timestamp with time zone");
+
+                    b.Property<DateTime>("CreatedAt")
+                        .HasColumnType("timestamp with time zone");
+
+                    b.Property<string>("CreatedBy")
+                        .HasColumnType("text");
+
+                    b.Property<string>("DeletedBy")
+                        .HasColumnType("text");
+
+                    b.Property<string>("Description")
+                        .HasColumnType("text");
+
+                    b.Property<DateTime?>("IsDeleted")
+                        .HasColumnType("timestamp with time zone");
+
+                    b.Property<string>("Title")
+                        .HasColumnType("text");
+
+                    b.Property<DateTime?>("Updated")
+                        .HasColumnType("timestamp with time zone");
+
+                    b.Property<string>("UpdatedBy")
+                        .HasColumnType("text");
+
+                    b.Property<int>("UserId")
+                        .HasColumnType("integer");
+
+                    b.Property<string>("UserName")
+                        .HasColumnType("text");
+
+                    b.Property<int>("status")
+                        .HasColumnType("integer");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("UserId");
+
+                    b.ToTable("appointments");
+                });
+
             modelBuilder.Entity("SocialMedia.Domain.Entities.Roles", b =>
                 {
                     b.Property<int>("Id")
@@ -75,22 +126,43 @@ namespace SocialMedia.Infrastructure.Migrations
                         .HasColumnType("text");
 
                     b.Property<string>("Email")
-                        .HasColumnType("text");
+                        .IsRequired()
+                        .HasMaxLength(150)
+                        .HasColumnType("character varying(150)");
 
                     b.Property<string>("FullName")
-                        .HasColumnType("text");
+                        .IsRequired()
+                        .HasMaxLength(100)
+                        .HasColumnType("character varying(100)");
 
                     b.Property<string>("Image")
                         .HasColumnType("text");
+
+                    b.Property<bool>("Is2FAEnabled")
+                        .HasColumnType("boolean");
 
                     b.Property<DateTime?>("IsDeleted")
                         .HasColumnType("timestamp with time zone");
 
                     b.Property<string>("Password")
+                        .IsRequired()
+                        .HasMaxLength(255)
+                        .HasColumnType("character varying(255)");
+
+                    b.Property<string>("PasswordResetToken")
                         .HasColumnType("text");
+
+                    b.Property<DateTime?>("PasswordResetTokenExpiration")
+                        .HasColumnType("timestamp with time zone");
 
                     b.Property<int>("RoleId")
                         .HasColumnType("integer");
+
+                    b.Property<string>("TwoFactorCode")
+                        .HasColumnType("text");
+
+                    b.Property<DateTime?>("TwoFactorCodeExpiration")
+                        .HasColumnType("timestamp with time zone");
 
                     b.Property<DateTime?>("Updated")
                         .HasColumnType("timestamp with time zone");
@@ -103,6 +175,17 @@ namespace SocialMedia.Infrastructure.Migrations
                     b.HasIndex("RoleId");
 
                     b.ToTable("Users");
+                });
+
+            modelBuilder.Entity("SocialMedia.Domain.Entities.Appointments", b =>
+                {
+                    b.HasOne("SocialMedia.Domain.Entities.User", "user")
+                        .WithMany("appointments")
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("user");
                 });
 
             modelBuilder.Entity("SocialMedia.Domain.Entities.User", b =>
@@ -119,6 +202,11 @@ namespace SocialMedia.Infrastructure.Migrations
             modelBuilder.Entity("SocialMedia.Domain.Entities.Roles", b =>
                 {
                     b.Navigation("Users");
+                });
+
+            modelBuilder.Entity("SocialMedia.Domain.Entities.User", b =>
+                {
+                    b.Navigation("appointments");
                 });
 #pragma warning restore 612, 618
         }
